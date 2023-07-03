@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  server:
+    build:
+      context: .
+      args:
+        - PORT=${PORT}
+        - MAX_FILE_LENGTH=${MAX_FILE_LENGTH}
+        - TIMEOUT=${TIMEOUT}
+    container_name: server
+    command: python server.py
+    volumes:
+      - .:/usr/src/app/
