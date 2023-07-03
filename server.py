@@ -29,13 +29,13 @@ def writer(msg, file_name, client):
         file = open(file_name, "ab")
         
         # Para mensagens que precisam ser armazenadas em mais de um arquivo o count_file
-        # é utilizado para diferenciar os vários arquivo que compõem a mesma mensagem
+        # é utilizado para diferenciar os vários arquivos que compõem a mesma mensagem
         remain_msg_to_be_stored = len(msg) - remain_space
         head = remain_space
         count_file = 1
 
         # Esse laço avalia o quanto da mensagem falta ser armazenada e se deve ser em
-        # um único arquivo ou vários.
+        # um único arquivo ou em vários.
         while remain_msg_to_be_stored > 0:       
             if remain_msg_to_be_stored <= int(os.getenv("MAX_FILE_LENGTH", "10")):
                 file.write(msg[head:])
