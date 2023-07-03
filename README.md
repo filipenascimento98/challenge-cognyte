@@ -16,7 +16,7 @@ Para acessar o projeto basta clonar este respositório, instalar as tecnologias 
 docker-compose up -d --build
 ```
 A flag __-d__ serve para rodar a aplicação e não ocupar o atual terminal, se preferir pode executar sem esta flag.
-Com o servidor em execução conforme o passo anterior podemos acessá-lo por meio do arquivo __client.py__. Para executar, antes descubra o IP do container no qual está sendo executado o servidor com o comando:
+Com o servidor em execução conforme o passo anterior podemos interagir com ele por meio do arquivo __client.py__. Para executar o client, antes descubra o IP do container no qual está sendo executado o servidor com o comando:
 ```bash
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <id_container>
 ```
