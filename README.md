@@ -8,7 +8,7 @@ O objetivo deste desafio é criar um software para receber dados via rede e arma
 - [Docker Compose](https://docs.docker.com/compose/)
 
 # Configuração
-No arquivo __.env__ é necessário configurar os valores de timeout, porta do servidor e tamanho máximo dos arquivos que são respectivamente as variáveis __TIMEOUT__, __PORT__ e __MAX_FILE_LENGTH__.
+No arquivo __.env__ é necessário configurar os valores de timeout, porta do servidor e tamanho máximo dos arquivos que são respectivamente as variáveis __TIMEOUT__, __PORT__ e __MAX_FILE_LENGTH__. O arquivo __.env-template__ pode ser usado como arquivo __.env__, mas para isso é necessário renomear o arquivo para __.env__ e preencher os valores das variáveis no respectivo arquivo.
 
 # Como executar
 Para acessar o projeto basta clonar este respositório, instalar as tecnologias citadas acima e executar o seguinte comando
